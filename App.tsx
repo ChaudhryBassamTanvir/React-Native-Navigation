@@ -5,6 +5,8 @@ import Home from './src/screens/Home'
 import Details from './src/screens/Details'
 
 
+import {NavigationContainer} from "@react-navigation/native"
+
 
 export type RootStackParamList={
   Home:undefined,
