@@ -16,11 +16,37 @@ export type RootStackParamList={
   Details:{productId:string}
 }
 
+
+const Stack= createNativeStackNavigator<RootStackParamList>()
+
 const App = () => {
   return (
-    <View>
-      <Text>App of Bassam Tanvir </Text>
-    </View>
+   <NavigationContainer>
+<Stack.Navigator initialRouteName='Home'>
+  <Stack.Screen
+  name="Home"
+  component={Home}
+  options={{
+    title:"Trending Products"
+  }}
+  
+  
+  />
+
+<Stack.Screen
+  name="Details"
+  component={Details}
+  options={{
+    title:"Product Details"
+  }}
+  
+  
+  />
+
+
+</Stack.Navigator>
+
+   </NavigationContainer>
   )
 }
 
