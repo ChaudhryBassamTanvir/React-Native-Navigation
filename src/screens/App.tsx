@@ -3,8 +3,8 @@ import React from 'react'
 
 
 //screens
-import Home from './src/screens/Home'
-import Details from './src/screens/Details'
+import Home from './Home'
+import Details from './Details'
 
 
 import {NavigationContainer} from "@react-navigation/native"
