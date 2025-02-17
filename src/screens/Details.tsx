@@ -10,7 +10,11 @@ import {NativeStackNavigationProp} from "@react-navigation/native-stack"
 type DetailsProps = NativeStackScreenProps<RootStackParamList,'Details'>
 
 
-const Details = ({(route):DetailsProps}) => {
+const Details = ({route}:DetailsProps) =>
+  
+  {
+    const {productId}= route.params  
+useNavigation<NativeStackNavigationProp<RootStackParamList>>()
   return (
     <View>
       <Text>Details</Text>
