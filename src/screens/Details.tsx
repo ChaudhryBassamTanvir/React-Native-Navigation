@@ -1,7 +1,16 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Details = () => {
+
+import {NativeStackScreenProps} from "@react-navigation/native-stack"
+import {RootStackParamList} from '../screens/App'
+import { useNavigation } from '@react-navigation/native'
+import {NativeStackNavigationProp} from "@react-navigation/native-stack"
+
+type DetailsProps = NativeStackScreenProps<RootStackParamList,'Details'>
+
+
+const Details = ({(route):DetailsProps}) => {
   return (
     <View>
       <Text>Details</Text>
